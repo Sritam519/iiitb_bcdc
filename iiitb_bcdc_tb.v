@@ -1,4 +1,4 @@
-module test_bcd();
+module iiitb_bcdc_tb();
 reg sRN,sCK, EN;
 wire [7:0] sQ;
 wire [3:0] sQu,sQz;
@@ -9,7 +9,7 @@ initial begin
 sRN=1'b0;
 sCK=1'b1;
 EN = 1;
-$dumpfile("bcd.vcd");
+$dumpfile("iiitb_bcdc.vcd");
 $dumpvars(0);
 $monitor($time,"sRN=%b,sCK=%b,sQ=%b,sQu=%b,sQz=%b",sRN,sCK,sQ,sQu,sQz);
 #5 sRN=1'b1;
