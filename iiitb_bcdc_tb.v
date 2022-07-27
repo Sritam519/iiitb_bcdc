@@ -3,7 +3,7 @@ reg sRN,sCK, EN;
 wire [7:0] sQ;
 wire [3:0] sQu,sQz;
 
-bcd test_bcd(.EN(EN),.RN(sRN),.CK(sCK),.Qu(sQu),.Qz(sQz),.Q(sQ));
+iiitb_bcdc test_bcd(.EN(EN),.RN(sRN),.CK(sCK),.Qu(sQu),.Qz(sQz),.Q(sQ));
 
 initial begin
 sRN=1'b0;
