@@ -7,13 +7,13 @@ The BCD Counter finds application in clock production, clock division, used in m
 The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it resets to initial value 0 and the process is repeated again. The Verilog code contains 8 bit output and clock, reset & enable as input. The 8 bit BCD counter block diagram is shown in Fig1 and the port list are given in Table1.In Fig2 output waveform for few clock cycles is displayed.<br />
 <br />
 steps for functional-simulation:-
-1.To clone the respository and download the netlist files for simulation, enter the following commands in your terminal
- $ sudo apt install -y git
- $ git clone https://github.com/Sritam519/iiitb_bcdc.git
- $ cd iiitb_bcdc
-2.To run the simulation use the following commands:- 
- $ iverilog iiit_bcdc.v iiit_bcdc_tb.v
- $ gtkwave iiit_bcdc.vsd
+1.To clone the respository and download the netlist files for simulation, enter the following commands in your terminal<br />
+ $ sudo apt install -y git<br />
+ $ git clone https://github.com/Sritam519/iiitb_bcdc.git<br />
+ $ cd iiitb_bcdc<br />
+2.To run the simulation use the following commands:- <br />
+ $ iverilog iiit_bcdc.v iiit_bcdc_tb.v<br />
+ $ gtkwave iiit_bcdc.vsd<br />
  
  
 
