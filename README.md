@@ -22,8 +22,8 @@ steps for functional-simulation:-<br />
 1.To clone the respository and download the netlist files for simulation, enter the following commands in your terminal<br />
  $ sudo apt install -y git<br />
  $ git clone https://github.com/Sritam519/iiitb_bcdc.git<br />
- $ cd iiitb_bcdc<br />
 2.To run the simulation use the following commands:- <br />
+ $ cd iiitb_bcdc<br />
  $ iverilog iiit_bcdc.v iiit_bcdc_tb.v<br />
  $ gtkwave iiit_bcdc.vsd<br />
  
