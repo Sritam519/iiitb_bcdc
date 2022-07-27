@@ -8,4 +8,5 @@ steps for functional-simulation:-
  $ iverilog iiit_bcdc.v iiit_bcdc_tb.v
  $ gtkwave iiit_bcdc.vsd
  
+ 
 
