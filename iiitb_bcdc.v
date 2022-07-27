@@ -1,4 +1,4 @@
-module bcd(RN,EN,CK,Qz,Qu,Q);
+module iiitb_bcdc(RN,EN,CK,Qz,Qu,Q);
 	input RN,CK,EN;
 	output [3:0]Qz,Qu;
 	output [7:0]Q;
