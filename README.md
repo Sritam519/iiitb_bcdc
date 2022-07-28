@@ -26,10 +26,10 @@ steps for functional-simulation:-<br />
  $ cd iiitb_bcdc<br />
  $ iverilog iiit_bcdc.v iiit_bcdc_tb.v<br />
  $ gtkwave iiit_bcdc.vsd<br />
- ## Author
+ ## Contributors
 
-- **Sriman Sritam Birtia,Postgraduate Student, International Institute of Information Technology, Bangalore** 
-
+- **Sriman Sritam Birtia** 
+- **Kunal Ghosh** 
 
 
 
