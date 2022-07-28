@@ -26,6 +26,25 @@ steps for functional-simulation:-<br />
  $ cd iiitb_bcdc<br />
  $ iverilog iiit_bcdc.v iiit_bcdc_tb.v<br />
  $ gtkwave iiit_bcdc.vsd<br />
+ ## Author
+
+- **Sriman Sritam Birtia,Postgraduate Student, International Institute of Information Technology, Bangalore** 
+
+
+
+
+## Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Madhav Rao, Associate Professor,International Institute of Information Technology, Bangalore
+- V N Muralidhara, Associate Professor,International Institute of Information Technology, Bangalore
+
+## Contact Information
+
+- Sriman Sritam Birtia, Postgraduate Student, International Institute of Information Technology, Bangalore,  sritambirtia123@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
+ 
  
  
 
