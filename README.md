@@ -50,6 +50,8 @@ steps for functional-simulation:-<br />
 ## *References*
 [^1]:	Emilliano, Chandan Kumar Chakrabarty, Ahmad Basri A Ghani, and Agileswari K Ramaswamy, [“VHDL Simulation on peak detector, 64 bit BCD Conuter and Reset Automation Block for PD Detection system using FPGA”] (https://ieeexplore.ieee.org/document/5545328)
 
+[^2]: [bcd counter] ([2]	https://www.watelectronics.com/bcd-counter-design-operation/)
+
 [^3]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)
 
 [^4]: GTK Wave [documentation](http://gtkwave.sourceforge.net/gtkwave.pdf)
