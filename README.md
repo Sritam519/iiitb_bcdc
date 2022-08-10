@@ -10,7 +10,7 @@ The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it res
 <br />
 ## Fig1 <br />
 <p align="center">
-  <img width="350" height="200" src="/images/blockdiagram.PNG">
+  <img width="350" height="200" src="/images/blockdiagram.png">
 </p><br>
 <br />
 ## Table1 <br />
