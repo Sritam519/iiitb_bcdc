@@ -51,7 +51,7 @@ steps for functional-simulation:-<br />
 ## *References*
 [^1]:	Emilliano, Chandan Kumar Chakrabarty, Ahmad Basri A Ghani, and Agileswari K Ramaswamy, “VHDL Simulation on peak detector, 64 bit BCD Conuter and Reset Automation Block for PD Detection system using FPGA”
 
-[^2]:	https://www.watelectronics.com/bcd-counter-design-operation/
+[^2]: https://www.watelectronics.com/bcd-counter-design-operation/
 
  
  
