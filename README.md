@@ -8,10 +8,9 @@ The BCD Counter finds application in clock production, clock division, used in m
 ## Reference circuit details <br />
 The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it resets to initial value 0 and the process is repeated again. The Verilog code contains 8 bit output and clock, reset & enable as input. The 8 bit BCD counter block diagram is shown in Fig1 and the port list are given in Table1.In Fig2 output waveform for few clock cycles is displayed.<br />
 <br />
-## Fig1 
-<p align="center">
-  <img width="350" height="200" src="/images/blockdiagram.PNG">
-</p><br>
+## Fig1 <br />
+![Fig1](.images/blockdiagram.png)
+<br />
 <br />
 ## Table1 <br />
 ![Table1](./Table1.png)
