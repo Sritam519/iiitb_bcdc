@@ -55,7 +55,7 @@ steps for functional-simulation:-<br />
 
 [^3]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)
 
-[^4]: GTK Wave [documentation](http://gtkwave.sourceforge.net/gtkwave.pdf)
+
  
  
  
