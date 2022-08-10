@@ -14,11 +14,14 @@ The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it res
 </p><br>
 <br />
 ## Table1 <br />
-![Table1](./images/Table1.png)
-<br />
+<p align="center">
+  <img width="350" height="200" src="/images/Table1.png">
+</p><br>
 <br />
 ## Fig2 <br />
-![Fig2](./images/waveform.png)
+<p align="center">
+  <img width="350" height="200" src="/images/waveform.png">
+</p><br>
 <br />
 
 steps for functional-simulation:-<br />
