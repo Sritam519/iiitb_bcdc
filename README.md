@@ -25,9 +25,12 @@ steps for functional-simulation:-<br />
  $ sudo apt install -y git<br />
  $ git clone https://github.com/Sritam519/iiitb_bcdc.git<br />
 2.To run the simulation use the following commands:- <br />
- $ cd iiitb_bcdc<br />
- $ iverilog iiitb_bcdc.v iiitb_bcdc_tb.v<br />
- $ gtkwave iiitb_bcdc.vsd<br />
+``` 
+ $ cd iiitb_bcdc
+ $ iverilog iiitb_bcdc.v iiitb_bcdc_tb.v
+ $ gtkwave iiitb_bcdc.vsd
+ ```
+ 
  ## Contributors
 
 - **Sriman Sritam Birtia** 
