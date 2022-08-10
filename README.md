@@ -20,14 +20,16 @@ The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it res
 <br />
 ## Fig2 <br />
 <p align="center">
-  <img width="350" height="200" src="/images/waveform.png">
+  <img width="800" height="200" src="/images/waveform.png">
 </p><br>
 <br />
 
 steps for functional-simulation:-<br />
 1.To clone the respository and download the netlist files for simulation, enter the following commands in your terminal<br />
- $ sudo apt install -y git<br />
- $ git clone https://github.com/Sritam519/iiitb_bcdc.git<br />
+...
+ $ sudo apt install -y git
+ $ git clone https://github.com/Sritam519/iiitb_bcdc.git
+ ...
 2.To run the simulation use the following commands:- <br />
 ``` 
  $ cd iiitb_bcdc
