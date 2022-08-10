@@ -49,11 +49,7 @@ steps for functional-simulation:-<br />
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
 
 ## *References*
-[^1]:	Emilliano, Chandan Kumar Chakrabarty, Ahmad Basri A Ghani, and Agileswari K Ramaswamy, “VHDL Simulation on peak detector, 64 bit BCD Conuter and Reset Automation Block for PD Detection system using FPGA”
-
-[^2]:	https://www.watelectronics.com/bcd-counter-design-operation/
-
-[^3]: Icarus Verilog - [iverilog](http://iverilog.icarus.com/)
+[1^][1]	Emilliano, Chandan Kumar Chakrabarty, Ahmad Basri A Ghani, and Agileswari K Ramaswamy, “VHDL Simulation on peak detector, 64 bit BCD Conuter and Reset Automation Block for PD Detection system using FPGA”
 
 
  
