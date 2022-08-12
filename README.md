@@ -40,6 +40,12 @@ steps for functional-simulation:-<br />
  $ gtkwave iiitb_bcdc.vsd
  ```
  
+ ## GLS <br />
+ <p align="center">
+  <img width="800" height="200" src="/images/post synthesis simulation.png">
+</p><br>
+<br />
+ 
  ## Contributors
 
 - **Sriman Sritam Birtia** 
