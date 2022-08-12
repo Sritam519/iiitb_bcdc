@@ -20,6 +20,8 @@ The 8 bit BCD counter counts from 00000000(0) to 10011001(99). After that it res
 </p><br>
 <br />
 
+## Functional simulation <br />
+
 ## Fig2 <br />
 <p align="center">
   <img width="800" height="200" src="/images/waveform.png">
