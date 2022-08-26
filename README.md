@@ -41,6 +41,11 @@ steps for functional-simulation:-<br />
  $ iverilog iiitb_bcdc.v iiitb_bcdc_tb.v
  $ gtkwave iiitb_bcdc.vsd
  ```
+ # Statistics 
+ <p align="center">
+  <img width="350" height="200" src="/images/stats.png">
+</p><br>
+<br />
  
  ## GLS <br />
  <p align="center">
