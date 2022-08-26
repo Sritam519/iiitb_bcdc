@@ -48,6 +48,11 @@ steps for functional-simulation:-<br />
 <br />
  
  ## GLS <br />
+ ```
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_bcdc_net.v iiitb_bcdc_tb.v
+./a.out --> For Generating the vcd file.
+gtkwave iiitb_bcdc.vcd
+```
  <p align="center">
   <img width="800" height="200" src="/images/post synthesis simulation.png">
 </p><br>
