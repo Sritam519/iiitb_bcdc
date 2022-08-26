@@ -109,7 +109,11 @@ $   sudo make
 $   sudo make install
 ```
 type **magic** terminal to check whether it installed succesfully or not. type **exit** to exit magic.
- 
+#### layout
+ <p align="center">
+  <img width="800" height="200" src="/images/layout.png">
+</p><br>
+<br />
  ## Contributors
 
 - **Sriman Sritam Birtia** 
