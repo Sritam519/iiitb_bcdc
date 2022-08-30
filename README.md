@@ -445,6 +445,13 @@ The next step is to run `floorplan` and `placement`. Type the following commands
 run_floorplan
 run_placement
 ```
+The floorplan can be viewed by typing the following command.
+```
+magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/volare/sky130/versions/e8294524e5f67c533c5d0c3afa0bcc5b2a5fa066/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef fed read iiitb_bcdc.def &
+```
+<p align="center">
+  <img src="/images/floorplan.png">
+</p><br>
 
 
  ## Contributors
