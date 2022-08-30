@@ -119,6 +119,7 @@ Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` 
     "CLOCK_NET": "clk",
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
     "CLOCK_PERIOD": 12,
+    "PL_RANDOM_GLB_PLACEMENT":1,
     "pdk::sky130*": {
         "SYNTH_MAX_FANOUT": 6,
         "FP_CORE_UTIL": 35,
@@ -133,6 +134,7 @@ Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` 
    "LIB_TYPICAL": "dir::src/sky130_fd_sc_hd__typical.lib",
    "TEST_EXTERNAL_GLOB": "dir::../iiitb_bcdc/src/*",
    "SYNTH_DRIVING_CELL":"sky130_vsdinv"
+   
 }
 ```
  ## Contributors
