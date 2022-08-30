@@ -218,24 +218,24 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  ## Logs & Reports  
   we can check it in 
   
-  /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
+  openlane_working_dir/OpenLane/designs/iiitb_bcdc/runs/RUN_2022.08.30_09.12.57/logs/routing  
  
  - Time report   
  
    <p align="center">   
- <img width="600" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
+ <img width="600" height="900" src="/images/timingreport.png">
   </p><br>   
   
   -Congestion Report   
   
   <p align="center">   
- <img width="475" height="450" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+ <img width="475" height="450" src="/images/congestionreport.png">
   </p><br>   
   
   -Power and Area report   
   
    <p align="center">   
-   <img width="500" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
+   <img width="500" height="500" src="/images/powerandarea.png">
    </p><br>      
   
  ### VLSI INTERACTIVE OPENLANE FLOW    
@@ -266,15 +266,13 @@ To generate the layout, type the following commands
  ```
  cd OpenLane   
  sudo make mount   
- ./flow.tcl -design iiitb_sipo
+ ./flow.tcl -design iiitb_bcdc
  ```    
  
  Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
  
  ```
- cd OpenLane   
- cd ..designs/..iiitb_sipo/..runs/..RUN_2022.08.21_12.53.02/..results/..final/..def/
- magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_sipo.def &
+magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read iiitb_bcdc.def &
  ```   
 
  ## Contributors
