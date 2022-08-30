@@ -1105,6 +1105,17 @@ module iiitb_bcdc (CK,
     .X(Q[5]));
 endmodule
 ```
+Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\12-cts.log`
+
+
+## Routing
+The command to run routing is 
+```
+run_routing
+```
+<p align="center">
+  <img src="/images/routing.png">
+</p><br>
 
 
  ## Contributors
