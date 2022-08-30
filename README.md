@@ -58,7 +58,7 @@ gtkwave iiitb_bcdc.vcd
 </p><br>
 <br />
 
-## Final Layout
+## Physical Design
 #### Openlane
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
