@@ -43,7 +43,7 @@ steps for functional-simulation:-<br />
  ```
  # Statistics 
  <p align="center">
-  <img width="350" height="400" src="/images/stats.png">
+  <img width="350" height="400" src="/images/stats0.png">
 </p><br>
 <br />
  
