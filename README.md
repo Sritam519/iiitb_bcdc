@@ -223,7 +223,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  - Time report   
  
    <p align="center">   
- <img width="600" height="900" src="/images/timingreport.png">
+ <img width="500" height="600" src="/images/timingreport.png">
   </p><br>   
   
   -Congestion Report   
