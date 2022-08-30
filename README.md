@@ -434,6 +434,17 @@ module iiitb_bcdc(RN, EN, CK, Qz, Qu, Q);
   );
 endmodule
 ```
+Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
+
+## Floorplan and Placement
+
+Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
+
+The next step is to run `floorplan` and `placement`. Type the following commands.
+```
+run_floorplan
+run_placement
+```
 
 
  ## Contributors
