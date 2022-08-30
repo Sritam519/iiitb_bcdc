@@ -137,6 +137,18 @@ Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` 
    
 }
 ```
+Now, paste the verilog code `iiitb_bcdc.v`, `sky130_vsdinv.lef`, `sky130_fd_sc_hd__fast.lib`,  `sky130_fd_sc_hd__slow.lib` and `sky130_fd_sc_hd__typical.lib`inside the folder `OpenLane/designs/iiitb_bcdc/src`
+
+
+To invoke OpenLane, type the following commands. On typing the following commands, `runs` folder is created inside the `iiitb_bcdc` folder. 
+```
+cd OpenLane
+make mount
+./flow.tcl -interactive
+prep -design iiitb_bcdc
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
  ## Contributors
 
 - **Sriman Sritam Birtia** 
