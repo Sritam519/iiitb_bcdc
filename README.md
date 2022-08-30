@@ -215,7 +215,67 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
 <p align="center">
   <img src="/images/vsdinv0.png">
 </p><br>
+ ## Logs & Reports  
+  we can check it in 
+  
+  /home/aditya/vsd/OpenLane/designs/iiitb_sipo/runs/RUN_2022.08.30_12.48.56/logs/routing/  
+ 
+ - Time report   
+ 
+   <p align="center">   
+ <img width="600" height="900" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/time_report.png">
+  </p><br>   
+  
+  -Congestion Report   
+  
+  <p align="center">   
+ <img width="475" height="450" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/congestion_report.png">
+  </p><br>   
+  
+  -Power and Area report   
+  
+   <p align="center">   
+   <img width="500" height="500" src="https://github.com/adityasingh6256/iiitb_sipo/blob/ca36c461ac328f7cf4458d0a675c20aed941db3c/images/power_report.png">
+   </p><br>      
+  
+ ### VLSI INTERACTIVE OPENLANE FLOW    
 
+```    
+cd OpenLane/ 
+sudo make mount 
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+run_floorplan
+run_placement
+run_cts
+run_routing
+run_magic
+run_magic_spice_export
+run_magic_drc
+run_netgen
+run_magic_antenna_check
+
+```    
+
+  
+### VLSI NON INTERACTIVE OPENLANE FLOW  
+
+To generate the layout, type the following commands    
+ ```
+ cd OpenLane   
+ sudo make mount   
+ ./flow.tcl -design iiitb_sipo
+ ```    
+ 
+ Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
+ 
+ ```
+ cd OpenLane   
+ cd ..designs/..iiitb_sipo/..runs/..RUN_2022.08.21_12.53.02/..results/..final/..def/
+ magic -T /home/aditya/vsd/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../../tmp/merged.nom.lef def read iiitb_sipo.def &
+ ```   
 
  ## Contributors
 
