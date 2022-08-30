@@ -211,6 +211,10 @@ run_routing
 <p align="center">
   <img src="/images/routing.png">
 </p><br>
+ALso, `sky130_vsdinv` can be viewed in the routing layout.
+<p align="center">
+  <img src="/images/vsdinv0.png">
+</p><br>
 
 
  ## Contributors
