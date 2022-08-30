@@ -161,7 +161,7 @@ run_synthesis
 The synthesized netlist is present in the results folder and the stats are present in the reports folder. 
 
 <p align="center">
-  <img width="800" height="200"src="/images/stats.png">
+  <img width="200" height="800"src="/images/stats.png">
 </p><br>
 
  ## Contributors
