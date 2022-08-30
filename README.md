@@ -465,6 +465,8 @@ The next step is to run run clock tree synthesis. The CTS run adds clock buffers
 ```
 run_cts
 ```
+Also, the netlist with clock buffers can be viewed by going to the location `results\cts\iiitb_bcdc.v`
+```
 
 module iiitb_bcdc (CK,
     EN,
@@ -1104,9 +1106,6 @@ module iiitb_bcdc (CK,
 endmodule
 ```
 
-
-Also, the netlist with clock buffers can be viewed by going to the location `results\cts\iiitb_bcdc.v`
-```
 
  ## Contributors
 
