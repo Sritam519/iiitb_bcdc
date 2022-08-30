@@ -108,12 +108,33 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-type **magic** terminal to check whether it installed succesfully or not. type **exit** to exit magic.
-#### layout
- <p align="center">
-  <img width="800" height="800" src="/images/layout.png">
-</p><br>
-<br />
+## Running OpenLane 
+ 
+Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` folder. The `config.json` file is given below as well.
+```
+{    
+    "DESIGN_NAME": "iiitb_bcdc",
+    "VERILOG_FILES": "dir::src/iiitb_bcdc.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "CLOCK_PERIOD": 12,
+    "pdk::sky130*": {
+        "SYNTH_MAX_FANOUT": 6,
+        "FP_CORE_UTIL": 35,
+        "scl::sky130_fd_sc_hd": {
+            "FP_CORE_UTIL": 30
+           
+        }
+    },
+   "LIB_SYNTH": "dir::src/sky130_fd_sc_hd__typical.lib",
+   "LIB_FASTEST": "dir::src/sky130_fd_sc_hd__fast.lib",
+   "LIB_SLOWEST": "dir::src/sky130_fd_sc_hd__slow.lib",
+   "LIB_TYPICAL": "dir::src/sky130_fd_sc_hd__typical.lib",
+   "TEST_EXTERNAL_GLOB": "dir::../iiitb_bcdc/src/*",
+   "SYNTH_DRIVING_CELL":"sky130_vsdinv"
+}
+```
  ## Contributors
 
 - **Sriman Sritam Birtia** 
