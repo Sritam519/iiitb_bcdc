@@ -154,6 +154,16 @@ add_lefs -src $lefs
 </p><br>
 
 ## Synthesis:
+Now, to run synthesis, type the following command
+```
+run_synthesis
+```
+The synthesized netlist is present in the results folder and the stats are present in the reports folder. 
+
+<p align="center">
+  <img src="/images/stats.png">
+</p><br>
+
  ## Contributors
 
 - **Sriman Sritam Birtia** 
