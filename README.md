@@ -460,7 +460,7 @@ magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/p
 <p align="center">
   <img src="/images/placement.png">
 </p><br>
-
+## Clock Tree Synthesis
 The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
 ```
 run_cts
