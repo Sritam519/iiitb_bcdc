@@ -136,7 +136,7 @@ After running the above commands we get the following results.
 </p><br>
 <br />
  
- ## Gate Level Simulation GLS <br />
+ ## 6. Gate Level Simulation GLS <br />
  GLS stands for gate level simulation. When we write the RTL code, we test it by giving it some stimulus through the testbench and check it for the desired specifications. Similarly, we run the netlist as the design under test (dut) with the same testbench. Gate level simulation is done to verify the logical correctness of the design after synthesis. Also, it ensures the timing of the design. <br>
 Commands to run the GLS are given below.
  ```
