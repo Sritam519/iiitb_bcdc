@@ -167,7 +167,7 @@ The ASIC flow objective is to convert RTL design to GDSII format used for final 
 
 The Simplified RTL2GDS Flow is given below.
 <p align="center">
-  <img width="400" height="200" src="/images/flow.PNG">
+  <img width="600" height="200" src="/images/flow.PNG">
 </p><br>
 <br />
 
