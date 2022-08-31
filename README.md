@@ -12,6 +12,7 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
  - - [5. Synthesis](#5-Synthesis)<br>
    - [5.1. Softwares Used](#51-Softwares-Used)<br>
    - [5.2. Run Synthesis](#52-Run-Synthesis)<br>
+ - - [6. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
  
 ## 1. Introduction <br />
 The 8 bit Binary Coded Decimal (BCD) Counter is a counter that counts 100 digits starting from 0 to 99.BCD is an encoding where each digit in a decimal number is represented in the form of bits(usually 4 bits). For example the number 89 can be represented as 10001001 in BCD as 1000 is the BCD representation of 8 and 1001 is the BCD representation of 9.BCD code is also known as 8421 BCD code. This also makes it a weighted code which implies that each bit in the four bit groups representing each decimal digit has a specific weight. As compared to prevalent binary positioning system it’s easy to convert it into human readable representation with the drawback of slight increase in complexity of the circuits.<br />
@@ -74,7 +75,7 @@ steps for functional-simulation:-<br />
 
 ### 5.1 Softwares used
 
-#### yosys – Yosys Open SYnthesis Suite
+#### yosys – Yosys Open Synthesis Suite
 
 
 This is a framework for RTL synthesis tools. It currently has
@@ -135,12 +136,15 @@ After running the above commands we get the following results.
 </p><br>
 <br />
  
- ## GLS <br />
+ ## Gate Level Simulation GLS <br />
+ GLS stands for gate level simulation. When we write the RTL code, we test it by giving it some stimulus through the testbench and check it for the desired specifications. Similarly, we run the netlist as the design under test (dut) with the same testbench. Gate level simulation is done to verify the logical correctness of the design after synthesis. Also, it ensures the timing of the design. <br>
+Commands to run the GLS are given below.
  ```
 iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_bcdc_net.v iiitb_bcdc_tb.v
 ./a.out --> For Generating the vcd file.
 gtkwave iiitb_bcdc.vcd
 ```
+The post GlS waveform is given below.
  <p align="center">
   <img width="800" height="200" src="/images/post synthesis simulation.png">
 </p><br>
