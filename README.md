@@ -71,7 +71,7 @@ steps for functional-simulation:-<br />
 
 ### 5.1 Softwares used
 
-####yosys – Yosys Open SYnthesis Suite
+#### yosys – Yosys Open SYnthesis Suite
 
 
 This is a framework for RTL synthesis tools. It currently has
@@ -128,7 +128,7 @@ After running the above commands we get the following results.
 </p><br>
 <br />
  <p align="center">
-  <img width="800" height="500" src="/images/show.png">
+  <img width="1200" height="500" src="/images/show.png">
 </p><br>
 <br />
  
