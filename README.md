@@ -66,12 +66,13 @@ steps for functional-simulation:-<br />
   <img width="800" height="200" src="/images/waveform.png">
 </p><br>
 <br />
+
 # 5. Synthesis
 
 ### 5.1 Softwares used
 
-yosys – Yosys Open SYnthesis Suite
-===================================
+####yosys – Yosys Open SYnthesis Suite
+
 
 This is a framework for RTL synthesis tools. It currently has
 extensive Verilog-2005 support and provides a basic set of
@@ -92,15 +93,19 @@ or the 2-clause BSD license).
 	graphviz xdot pkg-config python3 libboost-system-dev \
 	libboost-python-dev libboost-filesystem-dev zlib1g-dev
 ```
+
 #### **Installing Latest Version of Yosys**
+
 ```
 git clone https://github.com/YosysHQ/yosys.git
 make
 sudo make install 
 make test
 ```
-## 5.2. Run Synthesis
+### 5.2. Run Synthesis
+
 The commands to run synthesis in yosys are given below. First create an yosys script `yosys_run.sh` and paste the below commands.
+
 ```
 read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog iiitb_bcdc.v
