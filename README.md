@@ -1,5 +1,5 @@
 # iiitb_bcdc - 8 bit bcd counter
-The main goals of this project are implementing an 8-bit bcd code counter in skywater 130nm and identifying its functional, pre-layout, and post-layout features are  (namely power, performance and area). <br><br>
+The main goals of this project are implementing an 8-bit bcd code counter in skywater 130nm and identifying its functional, pre-layout, and post-layout features are  (namely power, performance and area) and convert our RTL design to GDSII format. <br><br>
 *Note: Further tweaking of the circuit is needed to boost performance.
 
 # Table of contents
