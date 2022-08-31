@@ -15,8 +15,8 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
  - - [6. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
  - - [7. Physical Design](#8-Physical-Design)<br>
    - [7.1. ASIC design flow](#71-ASIC-design-flow)
-   - [7.2. Software Used](#72-Softwares-Used)
-   - [7.3. Preperation for Running OpenLane](#73-Preperation-for-Running-OpenLane)
+   - [7.2. Softwares Used](#72-Softwares-Used)
+   - [7.3.Invoking OpenLane](#73-Invoking-OpenLane)
    - [7.4. Synthesis](#74-Synthesis)
    - [7.5. Floorplan](#75-Floorplan)
    - [7.6. Placement](#76-Placement)
@@ -170,7 +170,7 @@ The Simplified RTL2GDS Flow is given below.
   <img width="600" height="200" src="/images/flow.PNG">
 </p><br>
 <br />
-
+### 7.2 Softwares used
 #### Openlane
 OpenLANE is an opensource tool or flow used for opensource tape-outs. The OpenLANE flow comprises a variety of tools such as Yosys, ABC, OpenSTA, Fault, OpenROAD app, Netgen and Magic which are used to harden chips and macros, i.e. generate final GDSII from the design RTL. The primary goal of OpenLANE is to produce clean GDSII with no human intervention. OpenLANE has been tuned to function for the Google-Skywater130 Open Process Design Kit.
 
@@ -220,7 +220,7 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-## Running OpenLane 
+### 7.3 Invoking OpenLane 
  
 Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` folder. The `config.json` file is given below as well.
 ```
