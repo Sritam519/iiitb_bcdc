@@ -159,7 +159,18 @@ The post GlS waveform is given below.
 </p><br>
 <br />
 
-## Physical Design
+## 7. Physical Design
+
+### 7.1 ASIC design flow
+
+The ASIC flow objective is to convert RTL design to GDSII format used for final layout. The flow is essentially a software also known as automated PnR (Place & route).
+
+The Simplified RTL2GDS Flow is given below.
+<p align="center">
+  <img width="800" height="200" src="/images/flow.png">
+</p><br>
+<br />
+
 #### Openlane
 OpenLANE is an opensource tool or flow used for opensource tape-outs. The OpenLANE flow comprises a variety of tools such as Yosys, ABC, OpenSTA, Fault, OpenROAD app, Netgen and Magic which are used to harden chips and macros, i.e. generate final GDSII from the design RTL. The primary goal of OpenLANE is to produce clean GDSII with no human intervention. OpenLANE has been tuned to function for the Google-Skywater130 Open Process Design Kit.
 
