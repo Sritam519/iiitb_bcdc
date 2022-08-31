@@ -8,7 +8,7 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
  - [3. Verilog Implementation of BCD Code Counter](#3-Verilog-Implementation-of-BCD-Code-Counter)<br>
  - [4. Functional Simulation](#4-Functional-Simulation)<br>
    - [4.1. Softwares Used](#41-Softwares-Used)<br>
-   - [4.2. Simulation Results](#42-Simulation-Results)<br>
+   - [4.2. Steps & Results:](#42-Steps-&-Results:)<br>
  
 ## 1. Introduction <br />
 The 8 bit Binary Coded Decimal (BCD) Counter is a counter that counts 100 digits starting from 0 to 99.BCD is an encoding where each digit in a decimal number is represented in the form of bits(usually 4 bits). For example the number 89 can be represented as 10001001 in BCD as 1000 is the BCD representation of 8 and 1001 is the BCD representation of 9.BCD code is also known as 8421 BCD code. This also makes it a weighted code which implies that each bit in the four bit groups representing each decimal digit has a specific weight. As compared to prevalent binary positioning system it’s easy to convert it into human readable representation with the drawback of slight increase in complexity of the circuits.<br />
@@ -31,14 +31,23 @@ The port description is given below.
 </p><br>
 <br />
 
-## Functional simulation <br />
+## 4. Functional simulation <br />
 
-## Waveform <br />
-<p align="center">
-  <img width="800" height="200" src="/images/waveform.png">
-</p><br>
-<br />
+### 4.1 Softwares  <br />
+### - **Iverilog**
+Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format.
 
+### - **GTKwave**
+GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 which reads Ver Structural Verilog Compiler generated AET files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+
+### Installing necessary softwares:
+  ```
+  sudo apt-get install git 
+  sudo apt-get install iverilog 
+  sudo apt-get install gtkwave 
+  ```
+### 4.2 Steps & Results:
 steps for functional-simulation:-<br />
 1.To clone the respository and download the netlist files for simulation, enter the following commands in your terminal<br />
 ``` 
@@ -52,6 +61,11 @@ steps for functional-simulation:-<br />
  $ iverilog iiitb_bcdc.v iiitb_bcdc_tb.v
  $ gtkwave iiitb_bcdc.vsd
  ```
+ The output waveform is given below.
+ <p align="center">
+  <img width="800" height="200" src="/images/waveform.png">
+</p><br>
+<br />
  # Statistics 
  <p align="center">
   <img width="350" height="400" src="/images/stats0.png">
