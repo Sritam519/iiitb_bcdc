@@ -277,7 +277,7 @@ magic -T sky130A.tech sky130_inv.mag &
 On typing the following commands, the following netlist will open.
 
 <p align="center">
-  <img src="/images/inv1.png">
+  <img width="600" height="400" src="/images/inv1.png">
 </p><br>
 
 Now, to extract the spice netlist, type the following commands in the tcl console. Here, parasitic capacitances and resistances of the inverter is extracted by  `cthresh 0 rthresh 0`.
@@ -287,7 +287,7 @@ ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
 <p align="center">
-  <img src="/images/inv2.png">
+  <img width="600" height="400" src="/images/inv2.png">
 </p><br>
 
 The extracted spice model is shown below (which is edited to simulate the inverter).
@@ -320,7 +320,7 @@ run
 
 
 <p align="center">
-  <img src="/images/inv4.png">
+  <img width="600" height="400" src="/images/inv4.png">
 </p><br>
 
 To get a grid and to ensure the ports are placed correctly we type the following command in the tcl console
@@ -330,19 +330,19 @@ grid 0.46um 0.34um 0.23um 0.17um
 In Magic Layout window, first source the .mag file for the design (here inverter). Then Edit >> Text which opens up a dialogue box. Then do the steps shown in the below figure.
 
 <p align="center">
-  <img src="/images/inv6.png">
+  <img width="600" height="400" src="/images/inv6.png">
 </p><br>
 
 <p align="center">
-  <img src="/images/inv7.png">
+  <img width="600" height="400" src="/images/inv7.png">
 </p><br>
 
 <p align="center">
-  <img src="/images/inv8.png">
+  <img width="600" height="400" src="/images/inv8.png">
 </p><br>
 
 <p align="center">
-  <img src="/images/inv9.png">
+  <img width="600" height="400" src="/images/inv9.png">
 </p><br>
 
 Now, to extract the lef file and save it, type the following command.
@@ -350,7 +350,7 @@ Now, to extract the lef file and save it, type the following command.
 lef write
 ```
 <p align="center">
-  <img src="/images/inv5.png">
+  <img width="600" height="400" src="/images/inv5.png">
 </p><br>
 
 The extracted lef file is shown below.
