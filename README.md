@@ -493,6 +493,16 @@ magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/p
   <img src="/images/placement.png">
 </p><br>
 
+The vsdinv cell can be seen in placement layout.
+
+<p align="center">
+  <img src="/images/fp_vsdinv1.png">
+</p><br>
+
+<p align="center">
+  <img src="/images/fp_vsdinv2.png">
+</p><br>
+
 ### 7.7 Clock Tree Synthesis
 
 The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
