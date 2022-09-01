@@ -430,7 +430,7 @@ Now, to run synthesis, type the following command
 run_synthesis
 ```
 <p align="center">
-  <img width="700" height="200"src="/images/synth.png">
+  <img src="/images/synth.png">
 </p><br>
 
 The synthesized netlist is present in the results folder and the stats are present in the reports folder. 
