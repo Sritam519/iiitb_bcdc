@@ -529,6 +529,14 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   <img src="/images/vsdinv0.png">
 </p><br>
 
+<p align="center">
+  <img src="/images/vsdinv2.png">
+</p><br>
+
+<p align="center">
+  <img src="/images/vsdinv1.png">
+</p><br>
+
  ### 8. Logs & Reports  
   we can check it in 
   
