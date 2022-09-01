@@ -430,7 +430,7 @@ Now, to run synthesis, type the following command
 run_synthesis
 ```
 <p align="center">
-  <img width="700" height="600"src="/images/synth.png">
+  <img width="700" height="200"src="/images/synth.png">
 </p><br>
 
 The synthesized netlist is present in the results folder and the stats are present in the reports folder. 
@@ -442,13 +442,13 @@ The synthesized netlist is present in the results folder and the stats are prese
 
 Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
 <p align="center">
-  <img src="/images/netlist.png">
+  <img width="500" height="400" src="/images/netlist.png">
 </p><br>
 
 Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
 
 <p align="center">
-  <img src="/images/sta.png">
+  <img width="500" height="400" src="/images/sta.png">
 </p><br>
 
 
