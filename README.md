@@ -492,11 +492,14 @@ The next step is to run run clock tree synthesis. The CTS run adds clock buffers
 ```
 run_cts
 ```
+<p align="center">
+  <img src="/images/cts.png">
+</p><br>
 
 Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\12-cts.log`
 
 
-## Routing
+### 7.8 Routing
 The command to run routing is 
 ```
 run_routing
@@ -508,6 +511,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
 <p align="center">
   <img src="/images/vsdinv0.png">
 </p><br>
+
  ## Logs & Reports  
   we can check it in 
   
