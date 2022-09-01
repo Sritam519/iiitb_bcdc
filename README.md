@@ -19,10 +19,9 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
    - [7.3. Invoking OpenLane](#73-Invoking-OpenLane)
    - [7.4. Creating Custom Cell](#74-Creating-Custom-Cell)
    - [7.5. Synthesis](#74-Synthesis)
-   - [7.6. Floorplan](#75-Floorplan)
-   - [7.7. Placement](#76-Placement)
-   - [7.8. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
-   - [7.9. Routing](#78-Routing)
+   - [7.6. Floorplan & Placement](#75-Floorplan-&-Placement)
+   - [7.7. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
+   - [7.8. Routing](#78-Routing)
  
 ## 1. Introduction <br />
 The 8 bit Binary Coded Decimal (BCD) Counter is a counter that counts 100 digits starting from 0 to 99.BCD is an encoding where each digit in a decimal number is represented in the form of bits(usually 4 bits). For example the number 89 can be represented as 10001001 in BCD as 1000 is the BCD representation of 8 and 1001 is the BCD representation of 9.BCD code is also known as 8421 BCD code. This also makes it a weighted code which implies that each bit in the four bit groups representing each decimal digit has a specific weight. As compared to prevalent binary positioning system it’s easy to convert it into human readable representation with the drawback of slight increase in complexity of the circuits.<br />
@@ -461,6 +460,15 @@ The next step is to run `floorplan` and `placement`. Type the following commands
 run_floorplan
 run_placement
 ```
+
+<p align="center">
+  <img src="/images/fp.png">
+</p><br>
+
+<p align="center">
+  <img src="/images/pl.png">
+</p><br>
+
 The floorplan can be viewed by typing the following command.
 ```
 magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/volare/sky130/versions/e8294524e5f67c533c5d0c3afa0bcc5b2a5fa066/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef fed read iiitb_bcdc.def &
@@ -477,7 +485,7 @@ magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/p
   <img src="/images/placement.png">
 </p><br>
 
-## Clock Tree Synthesis
+### 7.7 Clock Tree Synthesis
 
 The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
 
