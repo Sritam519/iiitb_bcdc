@@ -13,7 +13,7 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
    - [5.1. Softwares Used](#51-Softwares-Used)<br>
    - [5.2. Run Synthesis](#52-Run-Synthesis)<br>
  - - [6. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
- - - [7. Physical Design](#7-Physical-Design)<br>
+ - - [7. Physical Design - RTL to GDSII](#7-Physical-Design---RTL-to-GDSII)<br>
    - [7.1. ASIC design flow](#71-ASIC-design-flow)
    - [7.2. Softwares Used](#72-Softwares-Used)
    - [7.3. Vlsi interactive openlane flow](#73-Vlsi-interactive-openlane-flow)
@@ -172,7 +172,7 @@ The post GlS waveform is given below.
 </p><br>
 <br />
 
-## 7. Physical Design
+## 7. Physical Design - RTL to GDSII
 
 ### 7.1 ASIC design flow
 
