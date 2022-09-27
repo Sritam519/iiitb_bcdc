@@ -16,20 +16,20 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
  - - [7. Physical Design](#8-Physical-Design)<br>
    - [7.1. ASIC design flow](#71-ASIC-design-flow)
    - [7.2. Softwares Used](#72-Softwares-Used)
-   - [7.3. Invoking OpenLane](#73-Invoking-OpenLane)
-   - [7.4. Creating Custom Cell](#74-Creating-Custom-Cell)
-   - [7.5. Synthesis](#74-Synthesis)
-   - [7.6. Floorplan & Placement](#75-Floorplan-&-Placement)
-   - [7.7. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
-   - [7.8. Routing](#78-Routing)
+   - [7.3. vlsi interactive openlane flow](#73-Invoking-OpenLane)
+   - [7.4. vlsi non interactive openlane flow](#73-Invoking-OpenLane)
+   - [7.5. Invoking OpenLane](#73-Invoking-OpenLane)
+   - [7.6. Creating Custom Cell](#74-Creating-Custom-Cell)
+   - [7.7. Synthesis](#74-Synthesis)
+   - [7.8. Floorplan & Placement](#75-Floorplan-&-Placement)
+   - [7.9. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
+   - [7.10. Routing](#78-Routing)
  - - [8. Synthesis](#8-Synthesis)<br>
- - - [9. VLSI Interactive Openlane flow](#9-VLSI-Interactive-Openlane-flow)<br>
- - - [10. VLSI Non-Interactive Openlane flow](#10-VLSI-Non-Interactive-Openlane-flow)<br>
- - - [11. Authors](#11-Authors)<br>
- - - [12. Contributors](#12-Contributors)
- - - [13. Acknowledgements](#13-Acknowledgments)
- - - [14. Contact Information](#14-contact-information)
- - - [15. References](#15-References)
+ - - [9. Authors](#11-Authors)<br>
+ - - [10. Contributors](#12-Contributors)
+ - - [11. Acknowledgements](#13-Acknowledgments)
+ - - [12. Contact Information](#14-contact-information)
+ - - [13. References](#15-References)
  
 ## 1. Introduction <br />
 The 8 bit Binary Coded Decimal (BCD) Counter is a counter that counts 100 digits starting from 0 to 99.BCD is an encoding where each digit in a decimal number is represented in the form of bits(usually 4 bits). For example the number 89 can be represented as 10001001 in BCD as 1000 is the BCD representation of 8 and 1001 is the BCD representation of 9.BCD code is also known as 8421 BCD code. This also makes it a weighted code which implies that each bit in the four bit groups representing each decimal digit has a specific weight. As compared to prevalent binary positioning system it’s easy to convert it into human readable representation with the drawback of slight increase in complexity of the circuits.<br />
@@ -178,6 +178,7 @@ The Simplified RTL2GDS Flow is given below.
   <img width="600" height="200" src="/images/flow.PNG">
 </p><br>
 <br />
+
 ### 7.2 Softwares used
 #### Openlane
 OpenLANE is an opensource tool or flow used for opensource tape-outs. The OpenLANE flow comprises a variety of tools such as Yosys, ABC, OpenSTA, Fault, OpenROAD app, Netgen and Magic which are used to harden chips and macros, i.e. generate final GDSII from the design RTL. The primary goal of OpenLANE is to produce clean GDSII with no human intervention. OpenLANE has been tuned to function for the Google-Skywater130 Open Process Design Kit.
@@ -228,7 +229,37 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-### 7.3 Invoking OpenLane 
+
+### 7.3 VLSI INTERACTIVE OPENLANE FLOW    
+
+```    
+cd OpenLane/ 
+sudo make mount 
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+run_floorplan
+run_placement
+run_cts
+run_routing
+run_magic
+run_magic_spice_export
+run_magic_drc
+run_netgen
+run_magic_antenna_check
+
+```    
+### 7.4 VLSI NON INTERACTIVE OPENLANE FLOW  
+
+To generate the layout, type the following commands    
+ ```
+ cd OpenLane   
+ sudo make mount   
+ ./flow.tcl -design iiitb_bcdc
+ ```     
+
+### 7.5 Invoking OpenLane 
  
 Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` folder. The `config.json` file is given below as well.
 ```
@@ -273,7 +304,7 @@ add_lefs -src $lefs
   <img src="/images/invoking_openlane.png">
 </p><br>
 
-### 7.4 Creating Custom Cell
+### 7.6 Creating Custom Cell
 First, clone the github repo containing the inverter and prepare for the next steps.
 ```
 git clone https://github.com/nickson-jose/vsdstdcelldesign.git
@@ -431,7 +462,7 @@ END LIBRARY
 
 ```
 
-### 7.5 Synthesis:
+### 7.7 Synthesis:
 Now, to run synthesis, type the following command
 ```
 run_synthesis
@@ -449,7 +480,7 @@ Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist
 
 
 
-### 7.6 Floorplan and Placement
+### 7.8 Floorplan and Placement
 
 Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
 
@@ -493,7 +524,7 @@ The vsdinv cell can be seen in placement layout.
   <img src="/images/fp_vsdinv2.png">
 </p><br>
 
-### 7.7 Clock Tree Synthesis
+### 7.9 Clock Tree Synthesis
 
 The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
 
@@ -506,7 +537,7 @@ run_cts
 
 
 
-### 7.8 Routing
+### 7.10 Routing
 The command to run routing is 
 ```
 run_routing
@@ -571,66 +602,36 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
 <b><I> Total Power = 10.9 uW (100%) </b></I><br>
    
   
- ### 9. VLSI INTERACTIVE OPENLANE FLOW    
-
-```    
-cd OpenLane/ 
-sudo make mount 
-./flow.tcl -interactive
-package require openlane 0.9
-prep -design picorv32a
-run_synthesis
-run_floorplan
-run_placement
-run_cts
-run_routing
-run_magic
-run_magic_spice_export
-run_magic_drc
-run_netgen
-run_magic_antenna_check
-
-```    
-
-  
-### 10. VLSI NON INTERACTIVE OPENLANE FLOW  
-
-To generate the layout, type the following commands    
- ```
- cd OpenLane   
- sudo make mount   
- ./flow.tcl -design iiitb_bcdc
- ```    
  
  Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
  
  ```
 magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read iiitb_bcdc.def &
  ```   
- ### 11. Author
+ ### 9. Author
 
 - **Sriman Sritam Birtia**
 
- ### 12. Contributors
+ ### 10. Contributors
 
 - **Sriman Sritam Birtia** 
 - **Kunal Ghosh** 
 
 
 
-### 13. Acknowledgments
+### 11. Acknowledgments
 
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 - Madhav Rao, Associate Professor,International Institute of Information Technology, Bangalore
 - V N Muralidhara, Associate Professor,International Institute of Information Technology, Bangalore
 
-### 14. Contact Information
+### 12. Contact Information
 
 - Sriman Sritam Birtia, Postgraduate Student, International Institute of Information Technology, Bangalore,  sritambirtia123@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd., kunalghosh@gmail.com
 
-### 15. *References*
+### 13. *References*
 **(1)	Emilliano, Chandan Kumar Chakrabarty, Ahmad Basri A Ghani, and Agileswari K Ramaswamy, “VHDL Simulation on peak detector, 64 bit BCD Conuter and Reset Automation Block for PD Detection system using FPGA” (https://ieeexplore.ieee.org/document/5545328)**
 
 **(2) bcd counter (https://www.watelectronics.com/bcd-counter-design-operation/)**
