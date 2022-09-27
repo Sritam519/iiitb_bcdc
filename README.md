@@ -538,31 +538,31 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  - Post synthesis gate count  
  
    <p align="center">   
-   <img width="500" height="600" src="/images/gate_count.png">
+   <img src="/images/gate_count.png">
    </p><br>   
   
   - Area of design   
   
   <p align="center">   
- <img width="475" height="450" src="/images/area.png">
+ <img src="/images/area.png">
   </p><br>   
   
   - Performance   
   
    <p align="center">   
-   <img width="500" height="500" src="/images/report_checks.png">
+   <img src="/images/report_checks.png">
    </p><br>      
    
    - Flipflop to standard cell ratio  
   
    <p align="center">   
-   <img width="500" height="500" src="/images/ffratio.png">
+   <img src="/images/ffratio.png">
    </p><br>      
    
    - Power Consumed   
   
    <p align="center">   
-   <img width="500" height="500" src="/images/power_report.png">
+   <img src="/images/power_report.png">
    </p><br>      
    
   
