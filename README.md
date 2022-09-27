@@ -571,7 +571,6 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
    <p align="center">   
    <img src="/images/gate_count.png">
    </p><br>   
-  
   <b><I> Gate Count = 43 </b></I> <br>
   
   - Area of design   
@@ -579,7 +578,6 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   <p align="center">   
  <img src="/images/area.png">
   </p><br>   
-  
   <b><I> Area of design = 3166.911 um2</b></I> <br>
   
   - Performance   
@@ -593,15 +591,13 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
    <p align="center">   
    <img src="/images/ffratio.png">
    </p><br>     
-   
-   <b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/43 = 0.186 </b></I><br>
+    <b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/43 = 0.186 </b></I><br>
    
    - Power Consumed   
   
    <p align="center">   
    <img src="/images/power_report.png">
    </p><br>    
-   
 <b><I> Internal Power = 5.35 uW (49.1%) </b></I><br>
 <b><I> Switching Power = 5.53 uW (50.8%) </b></I><br>
 <b><I> Leakage Power = 0.347 nW (0.00%) </b></I><br>
