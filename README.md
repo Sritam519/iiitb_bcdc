@@ -571,7 +571,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  ### 8. Results & Reports  
   
  
-   #### Post synthesis gate count  
+   #### (i)Post synthesis gate count  
  
    <p align="center">   
    <img src="/images/gate_count.png">
@@ -579,7 +579,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   <b><I> Gate Count = 43 </b></I> <br>
   
   
-   #### Area of design   
+   #### (ii)Area of design   
   
   <p align="center">   
  <img src="/images/area.png">
@@ -588,20 +588,21 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   
   
   
-   #### Performance   
+   #### (iii)Performance   
   
    <p align="center">   
    <img src="/images/report_checks.png">
-   </p><br>      
+   </p><br>    
+   <b><I> Performance = 1/(clock period - slack) = 1/(12 - 8.83)ns = 314.465 Mhz </b></I><br>
    
-   #### Flipflop to standard cell ratio  
+   #### (iv)Flipflop to standard cell ratio  
   
    <p align="center">   
    <img src="/images/ffratio.png">
    </p><br>     
     <b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/43 = 0.186 </b></I><br>
    
-   #### Power Consumed   
+   #### (v)Power Consumed   
   
    <p align="center">   
    <img src="/images/power_report.png">
