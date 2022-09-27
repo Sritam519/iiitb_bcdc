@@ -13,18 +13,23 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
    - [5.1. Softwares Used](#51-Softwares-Used)<br>
    - [5.2. Run Synthesis](#52-Run-Synthesis)<br>
  - - [6. Gate Level Simulation GLS](#6-Gate-Level-Simulation-GLS)<br>
- - - [7. Physical Design](#8-Physical-Design)<br>
+ - - [7. Physical Design](#7-Physical-Design)<br>
    - [7.1. ASIC design flow](#71-ASIC-design-flow)
    - [7.2. Softwares Used](#72-Softwares-Used)
-   - [7.3. vlsi interactive openlane flow](#73-Invoking-OpenLane)
-   - [7.4. vlsi non interactive openlane flow](#74-Invoking-OpenLane)
+   - [7.3. Vlsi interactive openlane flow](#73-Vlsi-interactive-openlane-flow)
+   - [7.4. Vlsi non-interactive openlane flow](#74-Vlsi-non-interactive-openlane-flow)
    - [7.5. Invoking OpenLane](#75-Invoking-OpenLane)
    - [7.6. Creating Custom Cell](#76-Creating-Custom-Cell)
    - [7.7. Synthesis](#77-Synthesis)
    - [7.8. Floorplan & Placement](#78-Floorplan-&-Placement)
    - [7.9. Clock Tree Synthesis](#79-Clock-Tree-Synthesis)
    - [7.10. Routing](#710-Routing)
- - - [8. Synthesis](#8-Synthesis)<br>
+ - - [8. Results & Reports ](#8-Results & Reports)<br>
+   - [8.1. Post synthesis gate count](#81-Post-synthesis-gate-count)
+   - [8.2. Area of design](#82-Area-of-design)
+   - [8.3. Performance](#83-Performance)
+   - [8.5. Flipflop to standard cell ratio](#84-Flipflop-to-standar-cell-ratio)
+   - [8.5. Power consumed](#85-Power-Consumed)
  - - [9. Authors](#11-Authors)<br>
  - - [10. Contributors](#12-Contributors)
  - - [11. Acknowledgements](#13-Acknowledgments)
@@ -571,7 +576,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  ### 8. Results & Reports  
   
  
-   #### (i)Post synthesis gate count  
+   #### 8.1 Post synthesis gate count  
  
    <p align="center">   
    <img src="/images/gate_count.png">
@@ -579,7 +584,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   <b><I> Gate Count = 43 </b></I> <br>
   
   
-   #### (ii)Area of design   
+   #### 8.2 Area of design   
   
   <p align="center">   
  <img src="/images/area.png">
@@ -588,21 +593,21 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   
   
   
-   #### (iii)Performance   
+   #### 8.3 Performance   
   
    <p align="center">   
    <img src="/images/report_checks.png">
    </p><br>    
-   <b><I> Performance = 1/(clock period - slack) = 1/(12 - 8.83)ns = 314.465 Mhz </b></I><br>
+   <b><I> Performance = 1/(clock period - slack) = 1/(12 - 8.82)ns = 314.465 Mhz </b></I><br>
    
-   #### (iv)Flipflop to standard cell ratio  
+   #### 8.4 Flipflop to standard cell ratio  
   
    <p align="center">   
    <img src="/images/ffratio.png">
    </p><br>     
     <b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/43 = 0.186 </b></I><br>
    
-   #### (v)Power Consumed   
+   #### 8.5 Power Consumed   
   
    <p align="center">   
    <img src="/images/power_report.png">
