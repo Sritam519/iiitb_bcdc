@@ -490,7 +490,7 @@ Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist
 
 
 
-### 7.8 Floorplan and Placement
+### 7.8 Floorplan & Placement
 
 Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
 
