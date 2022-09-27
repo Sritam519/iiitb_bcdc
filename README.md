@@ -565,10 +565,10 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
    <img src="/images/power_report.png">
    </p><br>    
    
-        <b><I> Internal Power = 5.35 uW (49.1%) </b></I><br>
-	<b><I> Switching Power = 5.53 uW (50.8%) </b></I><br>
-	<b><I> Leakage Power = 0.347 nW (0.00%) </b></I><br>
-	<b><I> Total Power = 10.9 uW (100%) </b></I><br>
+<b><I> Internal Power = 5.35 uW (49.1%) </b></I><br>
+<b><I> Switching Power = 5.53 uW (50.8%) </b></I><br>
+<b><I> Leakage Power = 0.347 nW (0.00%) </b></I><br>
+<b><I> Total Power = 10.9 uW (100%) </b></I><br>
    
   
  ### 9. VLSI INTERACTIVE OPENLANE FLOW    
