@@ -440,11 +440,6 @@ run_synthesis
   <img src="/images/synth.png">
 </p><br>
 
-The synthesized netlist is present in the results folder and the stats are present in the reports folder. 
-
-<p align="center">
-  <img width="700" height="600"src="/images/stats.png">
-</p><br>
 
 
 Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
@@ -452,11 +447,6 @@ Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist
   <img width="500" height="400" src="/images/netlist.png">
 </p><br>
 
-Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
-
-<p align="center">
-  <img width="500" height="400" src="/images/sta.png">
-</p><br>
 
 
 ### 7.6 Floorplan and Placement
@@ -514,11 +504,6 @@ run_cts
   <img src="/images/cts.png">
 </p><br>
 
-Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\12-cts.log`
-
-<p align="center">
-  <img src="/images/ctslog.png">
-</p><br>
 
 
 ### 7.8 Routing
