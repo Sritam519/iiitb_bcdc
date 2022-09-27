@@ -532,28 +532,39 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
   <img src="/images/vsdinv1.png">
 </p><br>
 
- ### 8. Logs & Reports  
-  we can check it in 
+ ### 8. Results & Reports  
   
-  openlane_working_dir/OpenLane/designs/iiitb_bcdc/runs/RUN_2022.08.30_09.12.57/logs/routing  
  
- - Time report   
+ - Post synthesis gate count  
  
    <p align="center">   
-   <img width="500" height="600" src="/images/timingreport.png">
+   <img width="500" height="600" src="/images/gate_count.png">
    </p><br>   
   
-  - Congestion Report   
+  - Area of design   
   
   <p align="center">   
- <img width="475" height="450" src="/images/congestionreport.png">
+ <img width="475" height="450" src="/images/area.png">
   </p><br>   
   
-  - Power and Area report   
+  - Performance   
   
    <p align="center">   
-   <img width="500" height="500" src="/images/powerandarea.png">
+   <img width="500" height="500" src="/images/report_checks.png">
    </p><br>      
+   
+   - Flipflop to standard cell ratio  
+  
+   <p align="center">   
+   <img width="500" height="500" src="/images/ffratio.png">
+   </p><br>      
+   
+   - Power Consumed   
+  
+   <p align="center">   
+   <img width="500" height="500" src="/images/power_report.png">
+   </p><br>      
+   
   
  ### 9. VLSI INTERACTIVE OPENLANE FLOW    
 
