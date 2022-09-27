@@ -258,6 +258,11 @@ To generate the layout, type the following commands
  sudo make mount   
  ./flow.tcl -design iiitb_bcdc
  ```     
+  Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
+ 
+ ```
+magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read iiitb_bcdc.def &
+ ```   
 
 ### 7.5 Invoking OpenLane 
  
@@ -566,34 +571,37 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
  ### 8. Results & Reports  
   
  
- - Post synthesis gate count  
+   #### Post synthesis gate count  
  
    <p align="center">   
    <img src="/images/gate_count.png">
    </p><br>   
   <b><I> Gate Count = 43 </b></I> <br>
   
-  - Area of design   
+  
+   #### Area of design   
   
   <p align="center">   
  <img src="/images/area.png">
   </p><br>   
   <b><I> Area of design = 3166.911 um2</b></I> <br>
   
-  - Performance   
+  
+  
+   #### Performance   
   
    <p align="center">   
    <img src="/images/report_checks.png">
    </p><br>      
    
-   - Flipflop to standard cell ratio  
+   #### Flipflop to standard cell ratio  
   
    <p align="center">   
    <img src="/images/ffratio.png">
    </p><br>     
     <b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/43 = 0.186 </b></I><br>
    
-   - Power Consumed   
+   #### Power Consumed   
   
    <p align="center">   
    <img src="/images/power_report.png">
@@ -605,11 +613,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
    
   
  
- Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
- 
- ```
-magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read iiitb_bcdc.def &
- ```   
+
  ### 9. Author
 
 - **Sriman Sritam Birtia**
