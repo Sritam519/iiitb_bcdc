@@ -564,7 +564,7 @@ ALso, `sky130_vsdinv` can be viewed in the routing layout.
    <p align="center">   
    <img src="/images/report_checks.png">
    </p><br>    
-   <b><I> Performance = 1/(clock period - slack) = 1/(12 - 8.82)ns = 314.465 Mhz </b></I><br>
+   <b><I> Performance = 1/(clock period - slack) = 1/(10 - 9.69)ns = 3225.80 Mhz </b></I><br>
    
    #### 8.4 Flipflop to standard cell ratio  
   
