@@ -22,7 +22,7 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
    - [7.6. Floorplan & Placement](#76-Floorplan-&-Placement)
    - [7.7. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
    - [7.8. Routing](#78-Routing)
- - - [8. Results & Reports](#8-Results-&-Reports)<br>
+ - - [8. Results & Reports](#8-Results--Reports)<br>
    - [8.1. Post synthesis gate count](#81-Post-synthesis-gate-count)
    - [8.2. Area of design](#82-Area-of-design)
    - [8.3. Performance](#83-Performance)
