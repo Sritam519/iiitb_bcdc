@@ -16,14 +16,12 @@ The main goals of this project are implementing an 8-bit bcd code counter in sky
  - - [7. Physical Design - RTL to GDSII](#7-Physical-Design---RTL-to-GDSII)<br>
    - [7.1. ASIC design flow](#71-ASIC-design-flow)
    - [7.2. Softwares Used](#72-Softwares-Used)
-   - [7.3. Vlsi interactive openlane flow](#73-Vlsi-interactive-openlane-flow)
-   - [7.4. Vlsi non-interactive openlane flow](#74-Vlsi-non-interactive-openlane-flow)
-   - [7.5. Invoking OpenLane](#75-Invoking-OpenLane)
-   - [7.6. Creating Custom Cell](#76-Creating-Custom-Cell)
-   - [7.7. Synthesis](#77-Synthesis)
-   - [7.8. Floorplan & Placement](#78-Floorplan-&-Placement)
-   - [7.9. Clock Tree Synthesis](#79-Clock-Tree-Synthesis)
-   - [7.10. Routing](#710-Routing)
+   - [7.3. Invoking OpenLane](#73-Invoking-OpenLane)
+   - [7.4. Creating Custom Cell](#74-Creating-Custom-Cell)
+   - [7.5. Synthesis](#75-Synthesis)
+   - [7.6. Floorplan & Placement](#76-Floorplan-&-Placement)
+   - [7.7. Clock Tree Synthesis](#77-Clock-Tree-Synthesis)
+   - [7.8. Routing](#78-Routing)
  - - [8. Results & Reports](#8-Results-&-Reports)<br>
    - [8.1. Post synthesis gate count](#81-Post-synthesis-gate-count)
    - [8.2. Area of design](#82-Area-of-design)
@@ -235,41 +233,9 @@ $   sudo make
 $   sudo make install
 ```
 
-### 7.3 VLSI INTERACTIVE OPENLANE FLOW    
 
-```    
-cd OpenLane/ 
-sudo make mount 
-./flow.tcl -interactive
-package require openlane 0.9
-prep -design picorv32a
-run_synthesis
-run_floorplan
-run_placement
-run_cts
-run_routing
-run_magic
-run_magic_spice_export
-run_magic_drc
-run_netgen
-run_magic_antenna_check
 
-```    
-### 7.4 VLSI NON INTERACTIVE OPENLANE FLOW  
-
-To generate the layout, type the following commands    
- ```
- cd OpenLane   
- sudo make mount   
- ./flow.tcl -design iiitb_bcdc
- ```     
-  Now open magic in new terminal using folowing command to see the final layout  in non interactive way   
- 
- ```
-magic -T /home/sritam/Desktop/vsdflow/work/tools/openlane_working_dir/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read iiitb_bcdc.def &
- ```   
-
-### 7.5 Invoking OpenLane 
+### 7.3 Invoking OpenLane 
  
 Download the config.json file and place it in the `OpenLane/designs/iiitb_bcdc` folder. The `config.json` file is given below as well.
 ```
@@ -314,7 +280,7 @@ add_lefs -src $lefs
   <img src="/images/invoking_openlane.png">
 </p><br>
 
-### 7.6 Creating Custom Cell
+### 7.4 Creating Custom Cell
 First, clone the github repo containing the inverter and prepare for the next steps.
 ```
 git clone https://github.com/nickson-jose/vsdstdcelldesign.git
@@ -472,7 +438,7 @@ END LIBRARY
 
 ```
 
-### 7.7 Synthesis:
+### 7.5 Synthesis:
 Now, to run synthesis, type the following command
 ```
 run_synthesis
@@ -490,7 +456,7 @@ Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist
 
 
 
-### 7.8 Floorplan & Placement
+### 7.6 Floorplan & Placement
 
 Also, sta report post synthesis can be viewed by going to the location `logs\synthesis\2-sta.log`
 
@@ -534,7 +500,7 @@ The vsdinv cell can be seen in placement layout.
   <img src="/images/fp_vsdinv2.png">
 </p><br>
 
-### 7.9 Clock Tree Synthesis
+### 7.7 Clock Tree Synthesis
 
 The next step is to run run clock tree synthesis. The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. To run clock tree synthesis, type the following commands
 
@@ -547,7 +513,7 @@ run_cts
 
 
 
-### 7.10 Routing
+### 7.8 Routing
 The command to run routing is 
 ```
 run_routing
